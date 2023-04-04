@@ -50,34 +50,34 @@
                                 [135.596438368833077, 34.9281476305997742], // 左下
                             ],
                     },
-                    layers: [
-                        {
-                            id: 'osm-layer',
-                            source: 'osm',
-                            type: 'raster',
-                        },
-                        {
-                            id: 'admin-layer',
-                            source: 'admin',
-                            'source-layer': 'admin', // ベクトルタイル内のレイヤー名を指定する
-                            type: 'fill',
-                            paint: {
-                                'fill-color': '#fa0',
-                                'fill-opacity': 0.5,
-                                'fill-outline-color': '#00f',
-                            },
-                        },
-                        {
-                            id: 'lakebiwa-layer',
-                            source: 'lakebiwa',
-                            type: 'raster',
-                            paint: {
-                                'raster-opacity': 0.7,
-                            },
-                        }
-                    ],
                 },
-            }
+                layers: [
+                    {
+                        id: 'osm-layer',
+                        source: 'osm',
+                        type: 'raster',
+                    },
+                    {
+                        id: 'admin-layer',
+                        source: 'admin',
+                        'source-layer': 'admin', // ベクトルタイル内のレイヤー名を指定する
+                        type: 'fill',
+                        paint: {
+                            'fill-color': '#fa0',
+                            'fill-opacity': 0.5,
+                            'fill-outline-color': '#00f',
+                        },
+                    },
+                    {
+                        id: 'lakebiwa-layer',
+                        source: 'lakebiwa',
+                        type: 'raster',
+                        paint: {
+                            'raster-opacity': 0.7,
+                        },
+                    }
+                ],
+            },
         });
 
         // クリック地点の地物の情報を取得する処理
