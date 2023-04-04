@@ -67,9 +67,18 @@
                                 'fill-outline-color': '#00f',
                             },
                         },
+                        {
+                            id: 'lakebiwa-layer',
+                            source: 'lakebiwa',
+                            type: 'raster',
+                            paint: {
+                                'raster-opacity': 0.7,
+                            },
+                        }
                     ],
                 },
-            });
+            }
+        });
 
         // クリック地点の地物の情報を取得する処理
         map.on('click', (e) => {
