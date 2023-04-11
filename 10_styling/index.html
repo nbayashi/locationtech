@@ -90,6 +90,17 @@
                         },
                     },
                     {
+                        // ポリゴンデータをlineとして描画することも出来る
+                        id: 'admin-outline-layer',
+                        source: 'admin',
+                        'source-layer': 'admin',
+                        type: 'line',
+                        paint: {
+                            'line-color': '#373',
+                            'line-width': 4,
+                        },
+                    },
+                    {
                         id: 'school-heatmap-layer', // 低ズームレベルでは、学校の位置情報をヒートマップとして表示
                         source: 'school',
                         type: 'heatmap',
